@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn">show Popup</button>
+    </div>
+    
+    <div class="special">
+        <span class="cross">&times;</span>
+        <img src="cook1.png" alt="img">
+        <h3>Cookies and Privacy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi dolores vitae. Quis, assumenda doloribus.</p>
+        <a href="#" class="accept"> Accept the cookies</a>
+        <a href="#" class="setting">Setting</a>
+    </div>
+    <script>
+        document.querySelector('.btn').onclick=()=>{
+              document.querySelector('.special').classList.add('active');
+        }
+        document.querySelector('.cross').onclick=()=>{
+              document.querySelector('.special').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

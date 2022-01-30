@@ -1,0 +1,95 @@
+*{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     box-sizing: border-box;
+     transition: all 0.2s linear;
+     border: none;
+}
+
+
+.container{
+    min-height: 100vh ;
+    display: grid;
+    place-items: center;
+    background-color: rgb(184, 134, 230);
+}
+
+.btn{
+    background-color: #fff;
+    color: #333;;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px grey ;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    box-shadow:   5px 0  5px 0  grey;
+    letter-spacing: 1px;
+}
+.special{
+    position:fixed;
+    bottom: 20px; left:-300px;
+    z-index: 1000;
+    background :honeydew ;
+    border-radius: 11px;
+    box-shadow: 0 10px 15px rgb(104, 98, 98);
+    text-align: center;
+    padding:10px;
+    width: 300px;
+    height:400px;
+}
+.special.active{
+  left:20px;
+}
+
+img{
+    width: 120px;
+    animation: image 10s linear infinite;
+}
+@keyframes image {
+    0%{
+        transform:rotate(360deg);
+        
+    }
+}
+.accept{
+    background-color: rgb(184, 134, 230);
+    display: block;
+    height:38px;
+    border-radius: 5px;
+    font-size:20px;
+    font-style:none;
+    color: white;
+    text-decoration:none;
+    align-items: center;
+    padding-top: 3px;
+    margin-bottom: 5px;
+}
+.accept:hover{
+    letter-spacing:1px;
+}
+.setting{
+    text-decoration: none;
+    color: rgb(184, 134, 230);
+    display: block;
+    border-radius: 5px;
+    height:38px;
+    padding-top: 5px;
+}
+.setting:hover{
+    background-color: rgb(235, 234, 230);
+}
+.cross{
+    position:absolute;
+    top: 3px; right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.cross:hover {
+    color: rgb(184, 134, 230);
+}
